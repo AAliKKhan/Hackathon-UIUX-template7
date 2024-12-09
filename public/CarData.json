@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Koenigsegg",
+    "type": "Sports Car",
+    "fuel": "50L",
+    "transmission": "Manual",
+    "image": "/koijesing.png",
+    "seats": 2,
+    "price": "$1500/day",
+    "description": "The Koenigsegg is a high-performance sports car, known for its incredible speed and cutting-edge design. \nPerfect for thrill-seekers who crave an adrenaline rush. \nWith its aerodynamic features and aggressive stance, it dominates the road. \nEngineered to break records, this car delivers heart-pounding acceleration. \nEvery detail has been designed for precision handling and speed. \nThe interior offers luxury, designed for the ultimate driving experience. \nEnjoy the thrill of driving a true masterpiece. \nKoenigsegg is not just a car; it's an experience."
+  },
+  {
+    "id": 2,
+    "title": "Nissan GT-R",
+    "type": "Sports Car",
+    "fuel": "60L",
+    "transmission": "Automatic",
+    "image": "/gtr.png",
+    "seats": 2,
+    "price": "$1200/day",
+    "description": "The Nissan GT-R is a masterpiece of engineering, delivering jaw-dropping acceleration. \nWith precision handling, it's an icon among car enthusiasts. \nIts twin-turbocharged engine ensures exceptional speed and power. \nThe GT-R offers an unforgettably thrilling driving experience. \nA perfect blend of aggressive styling and technical excellence. \nOn the track or on the road, the GT-R dominates. \nEvery ride is a testament to Nissan's commitment to performance. \nExperience the legacy of one of the world’s most legendary sports cars."
+  },
+  {
+    "id": 3,
+    "title": "ROLLS ROYCE",
+    "type": "Luxury Car",
+    "fuel": "80L",
+    "transmission": "Automatic",
+    "image": "/Rolls-Royce.png",
+    "seats": 4,
+    "price": "$5000/day",
+    "description": "Experience unparalleled luxury with the Rolls Royce, featuring exquisite craftsmanship. \nIts elegant design speaks volumes about sophistication and class. \nWith advanced technology, every journey is made smooth and luxurious. \nStep inside and feel the epitome of comfort and style. \nThe smooth, quiet ride makes it the perfect car for any occasion. \nIdeal for those who appreciate beauty and power in perfect harmony. \nEvery detail, from the upholstery to the features, is refined. \nRolls Royce offers a driving experience beyond compare."
+  },
+  {
+    "id": 4,
+    "title": "ALL NEW RUSH",
+    "type": "SUV",
+    "fuel": "55L",
+    "transmission": "Manual",
+    "image": "/Rush.png",
+    "seats": 5,
+    "price": "$350/day",
+    "description": "The All-New Rush is a versatile SUV designed for families and adventurers alike. \nReliable, spacious, and built to handle any terrain. \nIts rugged design ensures you're ready for the road less traveled. \nWhether you're on a family road trip or off-roading, it’s the perfect choice. \nComfortable seating and ample cargo space make it a family favorite. \nEnjoy modern features that elevate your driving experience. \nThis SUV combines practicality with a bold, sporty look. \nThe Rush is ready for any adventure, no matter the destination."
+  },
+  {
+    "id": 5,
+    "title": "CR-V",
+    "type": "SUV",
+    "fuel": "60L",
+    "transmission": "Automatic",
+    "image": "/crv.png",
+    "seats": 5,
+    "price": "$400/day",
+    "description": "The CR-V combines modern design with advanced technology, offering a comfortable ride. \nWith its spacious interior, it’s perfect for long drives or daily commuting. \nEfficient fuel economy ensures a practical, cost-effective choice. \nThe advanced safety features provide peace of mind for every journey. \nStylish and reliable, it’s a standout in the SUV category. \nIts versatile design accommodates all kinds of trips, from family vacations to city driving. \nThe CR-V ensures a smooth, enjoyable driving experience. \nHonda has crafted a vehicle that’s both practical and fun to drive."
+  },
+  {
+    "id": 6,
+    "title": "ALL NEW TRIOS",
+    "type": "Crossover",
+    "fuel": "45L",
+    "transmission": "Manual",
+    "image": "/trios.png",
+    "seats": 4,
+    "price": "$250/day",
+    "description": "Compact yet powerful, the All-New Trios is a crossover built for urban adventures. \nStylish, efficient, and easy to maneuver, it's perfect for the city. \nWith excellent fuel economy, it’s ideal for those who want to save on gas. \nIts compact size doesn’t compromise on interior comfort and space. \nThe modern design makes a statement wherever you go. \nEnjoy advanced technology and smooth handling for every drive. \nIt’s the ideal vehicle for navigating tight city streets with ease. \nThe Trios offers practicality, style, and a fun driving experience."
+  },
+  {
+    "id": 7,
+    "title": "MG ZX EXCLUSIVE",
+    "type": "Electric SUV",
+    "fuel": "0L",
+    "transmission": "Automatic",
+    "image": "/mgzx.png",
+    "seats": 5,
+    "price": "$600/day",
+    "description": "The MG ZX Exclusive is an all-electric SUV offering a clean, quiet ride. \nPerfect for eco-conscious drivers seeking innovation and style. \nWith zero emissions, it’s a step toward a greener future. \nThe MG ZX combines luxury with cutting-edge electric technology. \nIt offers a smooth, quiet ride, free from the noise of traditional engines. \nEnjoy advanced features that enhance the driving experience. \nPerfect for long drives, city commuting, and weekend getaways. \nThe MG ZX is a great choice for those looking for sustainability without compromise."
+  },
+  {
+    "id": 8,
+    "title": "NEWMG Z5",
+    "type": "Sedan",
+    "fuel": "50L",
+    "transmission": "Manual",
+    "image": "/mgz5.png",
+    "seats": 4,
+    "price": "$350/day",
+    "description": "The NewMG Z5 is a sleek sedan offering a smooth, comfortable drive. \nPerfect for everyday commuting or long-distance travel. \nWith a stylish exterior and modern interior, it’s a head-turner. \nEnjoy the perfect balance of affordability and sophistication. \nIts advanced safety features ensure you’re protected on every drive. \nThe Z5 offers a comfortable ride with spacious seating for all. \nEfficient fuel economy makes it a cost-effective choice. \nA sedan that combines elegance with practicality."
+  }
+]
