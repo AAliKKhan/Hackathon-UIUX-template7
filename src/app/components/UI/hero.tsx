@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Card from "../card";
-
+import Link from "next/link";
 interface Car {
   id: number;
   title: string;
@@ -135,7 +135,7 @@ export default function Hero() {
 
       {/* View More Button */}
       <div className="flex justify-center mt-[30px]">
-        <button className="bg-button1 w-[156px] h-[44px] mt-[50px] text-white border rounded-md">View More Cars</button>
+        <Link href="/ShowMore"><button className="bg-button1 w-[156px] h-[44px] mt-[50px] text-white border rounded-md">View More Cars</button></Link>
       </div>
     </div>
   );

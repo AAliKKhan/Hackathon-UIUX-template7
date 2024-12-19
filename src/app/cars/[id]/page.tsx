@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation"; // For dynamic route parameters
 import Image from "next/image";
 import HeartButton from "@/app/components/heart";
-import Rentnow from "@/app/components/rentnow";
+import Rentnow from "@/app/components/rentBtn";
 
 
 interface Car {

@@ -3,7 +3,7 @@
 
 "use client"
 import Link from "next/link";
-import Rentnow from "./rentnow";
+import Rentnow from "./rentBtn";
 import Image from "next/image";
 import HeartButton from "./heart";
 

@@ -1,8 +1,8 @@
 
 
-
-import Hero from "./components/UI/hero"; 
-
+import Image from "next/image";
+import Hero from "./components/UI/hero";
+import Card from "./components/card";
 
 export default function Home() {
   return (
