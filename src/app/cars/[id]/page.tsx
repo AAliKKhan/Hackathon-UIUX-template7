@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -6,7 +7,7 @@ import { useParams } from "next/navigation"; // For dynamic route parameters
 import Image from "next/image";
 import HeartButton from "@/app/components/heart";
 import Rentnow from "@/app/components/rentBtn";
-
+import Card from "@/app/components/card";
 
 interface Car {
   id: number;
@@ -42,8 +43,11 @@ const CarDetails = () => {
   if (!car) return <p>Loading car details...</p>;
 
   return (
-    <div className="grid grid-rows-10 grid-cols-10 wrapper gap-0"> {/* Remove gap between grid items */}
-      <div className="row-span-5 col-start-1 col-end-3 bg-slate- w-[360px] h-[2016px]">
+    <div className="flex wrapper">
+
+
+
+      <div>
         <div className="w-[330px] h-[2016px] bg-bg2 p-6">
           {/* Type Section */}
           <div className="mb-6">
@@ -104,101 +108,101 @@ const CarDetails = () => {
         </div>
       </div>
 
-      <div className="row-start-1 row-end-1 col-start-4 col-end-7 w-[492px] h-[360px]">
-        <div className="bg-[url('/blue.png')] bg-cover bg-center w-[492px] h-[360px] flex flex-col border rounded-md items-start justify-center p-6">
-          <h1 className="text-2xl font-semibold mb-2 text-left">Welcome to Our Site!</h1>
-          <p className="text-sm mb-4 text-left">
-            Discover the best cars available for rent, with a variety of options tailored to your needs.
-          </p>
-          <div className="w-full flex justify-center items-center">
-            <Image src={car.image} alt="Car view" width={380} height={120} />
-          </div>
-        </div>
+
+
+
+
+
+
+      <div>
+        <div>
+
+        <div className="flex gap-6 p-6">
+  {/* Left Section - Images */}
+  <div className="flex flex-col gap-4">
+    {/* Main Image Section */}
+    <div className="bg-[url('/blue.png')] bg-cover bg-center w-[492px] h-[360px] flex flex-col border rounded-md items-start justify-center p-6">
+      <h1 className="text-2xl font-semibold mb-2">Welcome to Our Site!</h1>
+      <p className="text-sm mb-4">
+        Discover the best cars available for rent, with a variety of options tailored to your needs.
+      </p>
+      <div className="w-full flex justify-center items-center">
+        <Image src={car.image} alt="Car view" width={380} height={120} />
       </div>
+    </div>
 
-      <div className="row-start-2 row-end-2 col-start-4 col-end-7 w-[492px] h-[124px]">
-        <div className="w-[492px] h-[124px] flex justify-between">
-          <div style={{ backgroundImage: "url(/blue.png)" }} className="flex items-center border rounded-md">
-            <Image src={car.image} alt="Car view" width={148} height={124} />
-          </div>
-          <div>
-            <Image
-              src="/interior1.png"
-              alt="Interior 1"
-              width={148}
-              height={124}
-              className="border rounded-md"
-            />
-          </div>
-          <div className="border rounded-md">
-            <Image
-              src="/interior2.png"
-              alt="Interior 2"
-              width={148}
-              height={124}
-            />
-          </div>
-        </div>
+    {/* Thumbnail Images Section */}
+    <div className="flex gap-6">
+      <div className="flex items-center border rounded-md" style={{ backgroundImage: "url(/blue.png)" }}>
+        <Image src={car.image} alt="Car view" width={148} height={124} />
       </div>
+      <Image
+        src="/interior1.png"
+        alt="Interior 1"
+        width={148}
+        height={124}
+        className="border rounded-md"
+      />
+      <Image
+        src="/interior2.png"
+        alt="Interior 2"
+        width={148}
+        height={124}
+        className="border rounded-md"
+      />
+    </div>
+  </div>
 
-      <div className="row-start-1 row-end-3 col-start-8 col-end-10 bg w-[492px] h-[508px]  ">
-        <div className="w-[492px] h-[508px] flex flex-col justify-between p-6 mr-[60px]">
-          <div className="relative flex flex-col gap-4">
-            {/* Title and Reviews */}
-            <div className="flex justify-between">
-              <div>
-                <h1 className="text-lg font-semibold mb-2">{car.title}</h1>
-                <Image
-                  src="/reviews.png"
-                  alt="review"
-                  width={220}
-                  height={24}
-                />
-              </div>
-              <div className="absolute top-0 right-0 p-2">
-                <HeartButton />
-              </div>
-            </div>
-
-            {/* Description */}
-            <div>
-              <p className="text-sm text-gray-700">{car.description}</p>
-            </div>
-
-            {/* Specifications */}
-            <div className="flex justify-between text-sm mt-4">
-              <div className="flex items-center">
-                <h1 className="text-base font-medium mr-2">Car Type</h1>
-                <p className="text-gray-600">{car.type}</p>
-              </div>
-              <div className="flex items-center">
-                <h1 className="text-base font-medium mr-2">Capacity</h1>
-                <p className="text-gray-600">{car.seats} person</p>
-              </div>
-            </div>
-
-            <div className="flex justify-between text-sm mt-2">
-              <div className="flex items-center">
-                <h1 className="text-base font-medium mr-2">Steering</h1>
-                <p className="text-gray-600">{car.transmission}</p>
-              </div>
-              <div className="flex items-center">
-                <h1 className="text-base font-medium mr-2">Gasoline</h1>
-                <p className="text-gray-600">{car.fuel}</p>
-              </div>
-            </div>
-
-            {/* Price and Rent Now Button */}
-            <div className="flex justify-between items-center mt-6">
-              <h1 className="text-lg font-semibold">{car.price}</h1>
-              <Rentnow />
-            </div>
-          </div>
-        </div>
+  {/* Right Section - Details */}
+  <div className="flex flex-col justify-between w-[492px] h-[508px] border rounded-md p-6">
+    {/* Title and Rating */}
+    <div className="flex justify-between items-start mb-4">
+      <div>
+        <h1 className="text-xl font-semibold">{car.title}</h1>
+        <Image src="/reviews.png" alt="Review" width={220} height={24} />
       </div>
+      <HeartButton />
+    </div>
 
-      {/* Remove margin between images */}
-      <div className="row-start-3 row-end-5 col-start-4 col-end-4 w-[1016px] h-[452px]">
+    {/* Description */}
+    <p className="text-sm text-gray-700 mb-4">{car.description}</p>
+
+    {/* Specifications */}
+    <div className="flex flex-wrap justify-between gap-4 text-sm mb-4">
+      <div className="flex flex-col">
+        <h1 className="text-base font-medium">Car Type:</h1>
+        <p className="text-gray-600">{car.type}</p>
+      </div>
+      <div className="flex flex-col">
+        <h1 className="text-base font-medium">Capacity:</h1>
+        <p className="text-gray-600">{car.seats} person</p>
+      </div>
+      <div className="flex flex-col">
+        <h1 className="text-base font-medium">Steering:</h1>
+        <p className="text-gray-600">{car.transmission}</p>
+      </div>
+      <div className="flex flex-col">
+        <h1 className="text-base font-medium">Gasoline:</h1>
+        <p className="text-gray-600">{car.fuel}</p>
+      </div>
+    </div>
+
+    {/* Price and Rent Now */}
+    <div className="flex justify-between items-center mt-4">
+      <h1 className="text-lg font-semibold">{car.price}</h1>
+      <Rentnow />
+    </div>
+  </div>
+</div>
+
+
+        </div>
+
+
+
+
+        <div>
+        <div className="row-start-3 row-end-5 col-start-4 col-end-4 w-[1016px] h-[452px]">
         <Image
           src="/UReviews.png"
           alt="review"
@@ -207,22 +211,84 @@ const CarDetails = () => {
         />
       </div>
 
-      <div className="row-start-5 row-end-7 col-start-4 col-end-4 w-[1016px] h-[448px] ">
-        <Image
-          src="/Recent Car.png"
-          alt="review"
-          width={1016}
-          height={452}
-        />
+      <div className="flex p-7 gap-8 w-[1016px] h-[448px] ">
+       
+<Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
+      <Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
+      <Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
       </div>
 
-      <div className="row-start-7 row-end-10 col-start-4 col-end-4 w-[1016px] h-[448px]">
-        <Image
-          src="/Recomendation Car.png"
-          alt="review"
-          width={1016}
-          height={452}
-        />
+      <div className=" flex p-7  gap-8 w-[1016px] h-[448px]">
+       
+               <Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
+
+<Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
+      <Card
+        id={car.id}
+        title={car.title}
+        type={car.type}
+        fuel={car.fuel}
+        transmission={car.transmission}
+        image={car.image}
+        seats={car.seats}
+        price={car.price}
+        description={car.description}
+      />
+
+      </div>
+        </div>
+
+ 
       </div>
     </div>
   );

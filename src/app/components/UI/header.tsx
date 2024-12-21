@@ -8,7 +8,7 @@ import SearchBar from '../searchbar';
 const Header = () => {
   return (
     <div className="w-[1440px] h-[124px] flex items-center justify-between px-8 wrapper">
-      {/* Logo and Search Bar Section */}
+
       <div className="flex items-center space-x-4 ml-[60px]">
         {/* Logo */}
         <Image 
@@ -61,3 +61,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
